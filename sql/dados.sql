@@ -23,6 +23,39 @@ SET time_zone = "+00:00";
 --
 
 --
+-- Extraindo dados da tabela `estado`
+--
+
+INSERT INTO `estado` (`id`, `nome`, `uf`, `pais`) VALUES
+(1, 'Acre', 'AC', 1),
+(2, 'Alagoas', 'AL', 1),
+(3, 'Amazonas', 'AM', 1),
+(4, 'Amapá', 'AP', 1),
+(5, 'Bahia', 'BA', 1),
+(6, 'Ceará', 'CE', 1),
+(7, 'Distrito Federal', 'DF', 1),
+(8, 'Espírito Santo', 'ES', 1),
+(9, 'Goiás', 'GO', 1),
+(10, 'Maranhão', 'MA', 1),
+(11, 'Minas Gerais', 'MG', 1),
+(12, 'Mato Grosso do Sul', 'MS', 1),
+(13, 'Mato Grosso', 'MT', 1),
+(14, 'Pará', 'PA', 1),
+(15, 'Paraíba', 'PB', 1),
+(16, 'Pernambuco', 'PE', 1),
+(17, 'Piauí', 'PI', 1),
+(18, 'Paraná', 'PR', 1),
+(19, 'Rio de Janeiro', 'RJ', 1),
+(20, 'Rio Grande do Norte', 'RN', 1),
+(21, 'Rondônia', 'RO', 1),
+(22, 'Roraima', 'RR', 1),
+(23, 'Rio Grande do Sul', 'RS', 1),
+(24, 'Santa Catarina', 'SC', 1),
+(25, 'Sergipe', 'SE', 1),
+(26, 'São Paulo', 'SP', 1),
+(27, 'Tocantins', 'TO', 1);
+
+--
 -- Extraindo dados da tabela `cidade`
 --
 
@@ -5594,38 +5627,7 @@ INSERT INTO `cidade` (`id`, `nome`, `estado`) VALUES
 (5563, 'Wanderlândia', 27),
 (5564, 'Xambioá', 27);
 
---
--- Extraindo dados da tabela `estado`
---
 
-INSERT INTO `estado` (`id`, `nome`, `uf`, `pais`) VALUES
-(1, 'Acre', 'AC', 1),
-(2, 'Alagoas', 'AL', 1),
-(3, 'Amazonas', 'AM', 1),
-(4, 'Amapá', 'AP', 1),
-(5, 'Bahia', 'BA', 1),
-(6, 'Ceará', 'CE', 1),
-(7, 'Distrito Federal', 'DF', 1),
-(8, 'Espírito Santo', 'ES', 1),
-(9, 'Goiás', 'GO', 1),
-(10, 'Maranhão', 'MA', 1),
-(11, 'Minas Gerais', 'MG', 1),
-(12, 'Mato Grosso do Sul', 'MS', 1),
-(13, 'Mato Grosso', 'MT', 1),
-(14, 'Pará', 'PA', 1),
-(15, 'Paraíba', 'PB', 1),
-(16, 'Pernambuco', 'PE', 1),
-(17, 'Piauí', 'PI', 1),
-(18, 'Paraná', 'PR', 1),
-(19, 'Rio de Janeiro', 'RJ', 1),
-(20, 'Rio Grande do Norte', 'RN', 1),
-(21, 'Rondônia', 'RO', 1),
-(22, 'Roraima', 'RR', 1),
-(23, 'Rio Grande do Sul', 'RS', 1),
-(24, 'Santa Catarina', 'SC', 1),
-(25, 'Sergipe', 'SE', 1),
-(26, 'São Paulo', 'SP', 1),
-(27, 'Tocantins', 'TO', 1);
 
 --
 -- Extraindo dados da tabela `tipo_imovel`
@@ -5644,8 +5646,7 @@ INSERT INTO `tipo_imovel` (`ID`, `NOME`) VALUES
 --
 
 INSERT INTO `usuario` (`ID`, `LOGIN`, `NOME`, `CIDADE`, `ENDERECO`, `ESTADO`, `RG`, `IMAGEM`, `FUNCAO`, `TELEFONE`, `DATANASC`, `SENHA`, `DATA_INCLUSAO`, `EMAIL`, `CPF`, `STATUS`) VALUES
-(1, 'admin', 'Administrador', '4117', 'Rua Adm', '23', '23.984.092-83', 'img/usuario/admin.jpg', NULL, '(99) 99999-9999', '2018-03-23', 'd033e22ae348aeb5660fc2140aec35850c4da9975', '2018-03-23 20:13:51', 'admin@admin.com', '034.455.890-89', 1),
-(2, 'admin2', 'Administrador 2', '12', 'Teste', '8', '45.456.567-87', 'img/usuario/admin2.jpg', NULL, '(87) 98908-9089', '1995-08-07', '315f166c5aca63a157f7d41007675cb44a948b336', '2018-04-29 17:10:49', 'teste@gmail.com', '235.346.456-', 0);
+(1, 'admin', 'Administrador', '4117', 'Rua Adm', '23', '23.984.092-83', 'img/usuario/admin.jpg', NULL, '(99) 99999-9999', '2018-03-23', 'd033e22ae348aeb5660fc2140aec35850c4da9975', '2018-03-23 20:13:51', 'admin@admin.com', '034.455.890-89', 1);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
